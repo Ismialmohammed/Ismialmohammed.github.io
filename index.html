@@ -1,22 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Data Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Ismail's Data Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 40px; background: #f5f7fa; }
-    h1 { color: #2c3e50; }
-    .project { margin-bottom: 30px; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    a { color: #2980b9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8fb;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #1e3a8a;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .project {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .project h2 {
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #6b7280;
+    }
   </style>
 </head>
 <body>
-  <h1>Hi, I'm Ismail Mohammed <h1>
-  <p>Welcome to my portfolio website! Here are a few of my data analysis projects:</p>
 
-  <div class="project">
-    <h2>⚽ Manchester City Match Analysis</h2>
-    <p>Explored Manchester City's match data using Python, Pandas, and Matplotlib.</p>
-    <p><a href="https://github.com/Ismialmohammed/man-city-football-analysis" target="_blank">🔗 View Project on GitHub</a></p>
+  <div class="container">
+    <h1>Hi, I'm Ismail Mohammed</h1>
+    <p style="text-align: center; color: #555;">Welcome to my portfolio — here are some of the projects I've worked on.</p>
+
+    <div class="project">
+      <h2>Manchester City Football Analysis</h2>
+      <p>Analyzed match data using Python, Pandas, and Matplotlib. Explored goals scored, conceded, and match results season-wise.</p>
+      <a href="https://github.com/Ismialmohammed/man-city-football-analysis" target="_blank">🔗 View Project on GitHub</a>
+    </div>
+
+    
   </div>
-   
+
+  <footer>
+    Made by Ismail | Hosted on GitHub Pages
+  </footer>
+
+</body>
+</html>
+

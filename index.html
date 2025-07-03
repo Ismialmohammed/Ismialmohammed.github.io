@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -13,8 +14,8 @@
     }
 
     body {
-      background-color: #000;
-      color: #fff;
+      background: linear-gradient(to right, #ffffff, #f0f0f0);
+      color: #111;
       scroll-behavior: smooth;
     }
 
@@ -24,7 +25,8 @@
       text-align: center;
       position: fixed;
       top: 0;
-      background-color: #111;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       z-index: 1000;
       padding: 1rem 0;
     }
@@ -36,22 +38,25 @@
     }
 
     .nav-links a {
-      color: #fff;
+      color: #333;
       text-decoration: none;
-      padding: 0.5rem 1rem;
-      border: 2px solid #fff;
+      padding: 0.6rem 1.2rem;
+      border: 2px solid #333;
       border-radius: 30px;
       transition: all 0.3s ease;
+      background-color: transparent;
+      font-weight: bold;
     }
 
     .nav-links a:hover {
-      background-color: #fff;
-      color: #000;
+      background: #333;
+      color: #fff;
+      transform: scale(1.05);
     }
 
     section {
       min-height: 100vh;
-      padding: 100px 20px 40px 20px;
+      padding: 120px 20px 60px 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -62,19 +67,22 @@
     h1 {
       font-size: 3rem;
       margin-bottom: 20px;
+      color: #000;
     }
 
     p {
-      max-width: 600px;
-      line-height: 1.6;
+      max-width: 700px;
+      line-height: 1.7;
+      font-size: 1.1rem;
+      color: #444;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #111;
+      background-color: #eee;
       font-size: 0.9rem;
-      color: #888;
+      color: #666;
     }
   </style>
 </head>
@@ -90,7 +98,7 @@
 
   <section id="about">
     <h1>Welcome to My Portfolio</h1>
-    <p>This is a clean and aesthetic black & white single-page portfolio site hosted on GitHub Pages.</p>
+    <p>This is a clean and aesthetic light-themed single-page portfolio site hosted on GitHub Pages.</p>
   </section>
 
   <section id="resume">

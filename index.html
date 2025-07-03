@@ -1,38 +1,115 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ismail Mohammed | Cyberpunk Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    nav {
+      width: 100%;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      background-color: #111;
+      z-index: 1000;
+      padding: 1rem 0;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 2px solid #fff;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 100px 20px 40px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-  <div id="tsparticles"></div>
-  <div class="overlay">
-    <header>
-      <h1>Ismail Mohammed</h1>
-      <p class="subtitle">Turning data into actionable insights through strategic analysis and clear communication</p>
-      <span class="typed-text"></span>
-    </header>
+  <nav>
+    <div class="nav-links">
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-    <section class="profile">
-      <img src="assets/profile.jpg" alt="Profile Picture">
-    </section>
+  <section id="about">
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is a clean and aesthetic black & white single-page portfolio site hosted on GitHub Pages.</p>
+  </section>
 
-    <section class="projects">
-      <h2>🔍 Featured Project</h2>
-      <p><strong>Manchester City Football Analysis:</strong> Visualized match data using Python, Pandas, and Matplotlib to uncover team performance trends.</p>
-      <a href="https://github.com/Ismialmohammed/man-city-football-analysis" target="_blank">🔗 View on GitHub</a>
-    </section>
+  <section id="resume">
+    <h1>Resume</h1>
+    <p>Include a link to download or view your resume here.</p>
+  </section>
 
-    <footer>
-      <p>Made with ⚡ by Ismail Mohammed | © 2025</p>
-    </footer>
-  </div>
+  <section id="projects">
+    <h1>Projects</h1>
+    <p>Showcase your best work with brief descriptions and GitHub links.</p>
+  </section>
 
-  <script src="script.js"></script>
+  <section id="contact">
+    <h1>Contact</h1>
+    <p>You can add your email or contact form link here.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
 </body>
 </html>
-

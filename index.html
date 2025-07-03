@@ -97,23 +97,34 @@
       border: 2px solid #00ff80;
       box-shadow: 0 0 12px #00ff80;
       border-radius: 10px;
-      max-width: 90%;
+      max-width: 600px;
+      width: 90%;
       height: auto;
     }
 
     .project-gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
+      gap: 2rem;
       padding-top: 2rem;
       width: 90%;
     }
 
-    .project-gallery img {
+    .project-item {
+      text-align: center;
+    }
+
+    .project-item img {
       width: 100%;
       border-radius: 10px;
       border: 2px solid #00ff80;
       box-shadow: 0 0 8px #00ff80;
+      margin-bottom: 10px;
+    }
+
+    .project-item p {
+      font-size: 1rem;
+      color: #ccc;
     }
 
     footer {
@@ -151,143 +162,30 @@
 
   <section id="projects">
     <h1>Projects</h1>
-    <p>Manchester City Football Analysis — screenshots below:</p>
+    <p>Manchester City Football Analysis — key visual insights:</p>
     <div class="project-gallery">
-      <img src="https://raw.githubusercontent.com/ismialmohammed/man-city-football-analysis/main/mc_analysis_screenshots/goal_difference_per_season.png" alt="Goal Difference">
-      <img src="https://raw.githubusercontent.com/ismialmohammed/man-city-football-analysis/main/mc_analysis_screenshots/goals_scored_perseason.png" alt="Goals Scored">
-      <img src="https://raw.githubusercontent.com/ismialmohammed/man-city-football-analysis/main/mc_analysis_screenshots/match_results_perseason.png" alt="Match Results">
-      <img src="https://raw.githubusercontent.com/ismialmohammed/man-city-football-analysis/main/mc_analysis_screenshots/mc_goals_conceded_perseason.png" alt="Goals Conceded">
+      <div class="project-item">
+        <img src="https://raw.githubusercontent.com/ismialmohammed/man-city-football-analysis/main/mc_analysis_screenshots/goal_difference_per_season.png" alt="Goal Difference">
+        <p>Season-wise goal difference showing offensive vs defensive strength over time.</p>
+      </div>
+      <div class="project-item">
+        <img src="https://raw.githubusercontent.com/ismialmohammed/man-city-football-analysis/main/mc_analysis_screenshots/goals_scored_perseason.png" alt="Goals Scored">
+        <p>Bar chart visualizing goals scored per season — highlights scoring trends.</p>
+      </div>
+      <div class="project-item">
+        <img src="https://raw.githubusercontent.com/ismialmohammed/man-city-football-analysis/main/mc_analysis_screenshots/match_results_perseason.png" alt="Match Results">
+        <p>Comparison of wins, losses, and draws each season for performance evaluation.</p>
+      </div>
+      <div class="project-item">
+        <img src="https://raw.githubusercontent.com/ismialmohammed/man-city-football-analysis/main/mc_analysis_screenshots/mc_goals_conceded_perseason.png" alt="Goals Conceded">
+        <p>Number of goals conceded per season — reflects defensive consistency.</p>
+      </div>
     </div>
   </section>
 
   <section id="contact">
     <h1>Contact</h1>
     <p>You can add your email or contact form link here.</p>
-  </section>
-
-  <footer>
-    &copy; 2025 Ismail Mohammed. All rights reserved.
-  </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <style>
-    /* Reset and base styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Helvetica Neue', sans-serif;
-    }
-
-    body {
-      background: #000;
-      color: #eee;
-      scroll-behavior: smooth;
-    }
-
-    /* Navbar */
-    nav {
-      width: 100%;
-      text-align: center;
-      position: fixed;
-      top: 0;
-      background-color: #111;
-      box-shadow: 0 2px 4px rgba(0, 255, 100, 0.2);
-      z-index: 1000;
-      padding: 1rem 0;
-    }
-
-    .nav-links {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    .nav-links a {
-      color: #fff;
-      text-decoration: none;
-      padding: 0.6rem 1.2rem;
-      border: 2px solid #00ff80;
-      border-radius: 30px;
-      transition: all 0.3s ease;
-      background-color: transparent;
-      font-weight: bold;
-      box-shadow: 0 0 8px #00ff80;
-    }
-
-    .nav-links a:hover {
-      background: #00ff80;
-      color: #000;
-      transform: scale(1.05);
-    }
-
-    section {
-      min-height: 100vh;
-      padding: 120px 20px 60px 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      color: #fff;
-    }
-
-    p {
-      max-width: 700px;
-      line-height: 1.7;
-      font-size: 1.1rem;
-      color: #ccc;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #111;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <div class="nav-links">
-      <a href="#resume">Resume</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <section id="about">
-    <h1>Welcome to My Portfolio</h1>
-    <p>My name is Ismail Mohammed and these is my portfolio.</p>
-  </section>
-
-  <section id="resume">
-    <h1>Resume</h1>
-    <p>Here's my Resume.</p>
-    <iframe src="./Ismail.resume_USA.pdf" width="80%" height="600px"></iframe>
-  </section>
-
-  <section id="projects">
-    <h1>Projects</h1>
-    <p>Showcase your best work with brief descriptions and GitHub links.</p>
-      </section>
-
-  <section id="contact">
-    <h1>Contact</h1>
-    <p>rayanmd2000@gmail.com.</p>
   </section>
 
   <footer>
